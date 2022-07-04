@@ -4,12 +4,14 @@ package com.talent.talenttraining.model
 import com.google.gson.annotations.SerializedName
 
 data class TvShow(
+    @SerializedName("id")
+    val id: Int,
     @SerializedName("first_air_date")
-    val firstAirDate: String,
+    val firstAirDate: String?,
     @SerializedName("name")
-    val name: String,
+    val name: String?,
     @SerializedName("overview")
-    val overview: String,
+    val overview: String?,
     @SerializedName("poster_path")
-    val posterPath: String
+    val posterPath: String?
 )
